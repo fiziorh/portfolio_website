@@ -49,8 +49,12 @@ p {
     padding-left: 0.2rem;
     padding-right: 0.2rem;
 }
+footer{
+    background-color: #b5c99a;
+    padding:5px;
+}
 /* STYLE */
 .pp {
-    width:200px;
+    max-width: 80%;
     margin: 0 auto;
 }
