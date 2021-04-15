@@ -5,10 +5,14 @@
 body {
         
         margin: 0 ;
-        padding:1rem;
+        /* padding:1rem; */
         background-color: #e9f5db;
         display: flex;
         flex-direction: column;
+        transition: 0.3s;
+}
+main{
+        padding:1rem;
 }
 h1 {
         margin-top: 1rem;
@@ -35,11 +39,12 @@ ul {
 .item1 {
     border-radius:4px;
     background-color: #e9f5db;
-    margin-top: 0.3rem;
+    margin-top: 0.25rem;
     padding: 0.3rem;
 }
 .port-image {
         max-width: 100%;
+        
         
 }
 h1, h2, h3, p {
@@ -53,8 +58,124 @@ footer{
     background-color: #b5c99a;
     padding:5px;
 }
+section {
+    margin-top: 2rem;
+}
 /* STYLE */
 .pp {
-    max-width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    padding:1.4rem;
+    
+    
+}
+.down-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+}
+.p1 {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    margin-top: 0;
+}
+/* FONT STYLE */
+p,a {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+#name2 {
+    font-size: large;
+}
+#down2 {
+    font-size: small;
+}
+h1, h2, h3, #name2, .name {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-shadow: 0px 1px 1px #3D322F;
+}
+
+/* MORE STYLE */
+#about {
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (min-width:769px) {
+ .container2 {
+     flex-direction: row;
+     
+ }
+ .home {
+     display: flex;
+     flex-direction: row-reverse;
+     margin-bottom: 2rem;
+ }
+.p1, .p2 {
+    text-align: justify;
+    padding-left: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.pp {
+    max-width: 40%;
+}
+.item1 {
+background-color: #b5c99a;
+}
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item2 {
+    max-width: 49%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p2 {
+    box-shadow: 3px 3px 5px 0px #000000;
+}
+.p1 {
+    margin-top: 1rem;
+}
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media screen and (min-width:1024px){
+
+    .navcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .name {
+        padding-left: 2rem;
+    }
+    .p1 {
+        padding-left: 2rem;
+    }
+    .item1 {
+        padding-right: 1rem;
+    }
+    .item2 {
+        max-width: 31%;
+    }
+    #aboutbox {
+        max-width: 50%;
+    }
+    .container2 {
+        padding-right: 1.4rem;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .port-image:hover {
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+    
 }
