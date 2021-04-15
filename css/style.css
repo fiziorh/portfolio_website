@@ -72,11 +72,15 @@ section {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
 }
 .p1 {
     padding-left: 1.2rem;
     padding-right: 1.2rem;
     margin-top: 0;
+}
+.big {
+    display: none;
 }
 /* FONT STYLE */
 p,a {
@@ -86,15 +90,13 @@ a {
     text-decoration: none;
     color: black;
 }
-#name2 {
-    font-size: large;
-}
-#down2 {
-    font-size: small;
-}
+
 h1, h2, h3, #name2, .name {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     text-shadow: 0px 1px 1px #3D322F;
+}
+#down2 {
+    font-size: 1rem;
 }
 
 /* MORE STYLE */
@@ -104,7 +106,7 @@ h1, h2, h3, #name2, .name {
 }
 
 /* MEDIA QUERY FOR TABLET */
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
  .container2 {
      flex-direction: row;
      
@@ -141,6 +143,22 @@ background-color: #b5c99a;
 }
 .p1 {
     margin-top: 1rem;
+}
+.down-nav{
+    justify-content: space-between;
+}
+.item7 {
+    display: none;
+}
+.big {
+    display:flex;
+    flex-direction: row;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+    font-size: small;
+} 
+.item6 {
+    padding-left: 0.5rem;
 }
 }
 
